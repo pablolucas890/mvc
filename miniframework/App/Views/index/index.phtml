@@ -1,0 +1,11 @@
+<h1>Index</h1>
+<hr />
+
+<?php
+	//esta é a view relacionada ao disparo do metodo index, basicamente ela formata
+	//os dados relacionados aos produtos que estão no obj view->dados
+	foreach($this->view->dados as $indice => $produto) {
+		echo $produto['id'] . ' - ' . $produto['descricao'] . ' - ' . $produto['preco'];
+		echo '<br />';
+	}
+?>
